@@ -49,8 +49,7 @@
            <button type="button" onclick="load_3d('zebra_11')">Load 3D</button>
          </h4>
       </div>
-
-      <div id='zebra_11_3d' class="mesh" data-title="zebra" display:none>
+      <div id='zebra_11_3d' class="mesh" data-title="zebra">
          <model-viewer autoplay ar shadow-intensity="1" src="images/zebra/zebra_11.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
          <h4>
            Zebra
@@ -62,25 +61,60 @@
          <img src="images/zebra/zebra_22.png" alt="">
          <h4>Zebra</h4>
       </div>
+      <div id='zebra_22_3d' class="mesh" data-title="zebra">
+         <model-viewer autoplay ar shadow-intensity="1" src="images/zebra/zebra_22.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+         <h4>
+           Zebra
+           <button type="button" onclick="close_3d('zebra_22')">Close 3D</button>
+         </h4>
+      </div>
 
       <div class="image" data-title="zebra">
          <img src="images/zebra/zebra_27.png" alt="">
          <h4>Zebra</h4>
+      </div>
+      <div id='zebra_27_3d' class="mesh" data-title="zebra">
+         <model-viewer autoplay ar shadow-intensity="1" src="images/zebra/zebra_27.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+         <h4>
+           Zebra
+           <button type="button" onclick="close_3d('zebra_27')">Close 3D</button>
+         </h4>
       </div>
 
       <div class="image" data-title="giraffe">
          <img src="images/giraffe/giraffe_12.png" alt="">
          <h4>Giraffe</h4>
       </div>
+      <div id='giraffe_12_3d' class="mesh" data-title="zebra">
+         <model-viewer autoplay ar shadow-intensity="1" src="images/giraffe/giraffe_12.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+         <h4>
+           Zebra
+           <button type="button" onclick="close_3d('giraffe_12')">Close 3D</button>
+         </h4>
+      </div>
 
       <div class="image" data-title="giraffe">
          <img src="images/giraffe/giraffe_15.png" alt="">
          <h4>Giraffe</h4>
       </div>
+      <div id='giraffe_15_3d' class="mesh" data-title="zebra">
+         <model-viewer autoplay ar shadow-intensity="1" src="images/giraffe/giraffe_15.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+         <h4>
+           Zebra
+           <button type="button" onclick="close_3d('giraffe_15')">Close 3D</button>
+         </h4>
+      </div>
 
       <div class="image" data-title="giraffe">
          <img src="images/giraffe/giraffe_16.png" alt="">
          <h4>Giraffe</h4>
+      </div>
+      <div id='giraffe_16_3d' class="mesh" data-title="zebra">
+         <model-viewer autoplay ar shadow-intensity="1" src="images/giraffe/giraffe_16.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+         <h4>
+           Zebra
+           <button type="button" onclick="close_3d('giraffe_16')">Close 3D</button>
+         </h4>
       </div>
 
    </div>
@@ -91,6 +125,7 @@
 
 let searchBox = document.querySelector('#search-box');
 let images = document.querySelectorAll('.container .image-container .image');
+let buttons = document.querySelectorAll('.button');
 
 searchBox.oninput = () =>{
    images.forEach(hide => hide.style.display = 'none');
