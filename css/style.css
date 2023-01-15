@@ -77,10 +77,6 @@ body{
   display: none
 }
 
-.container .image-container .image {
-  display: none
-}
-
 
 @media (max-width:768px){
   .container #search-box{
