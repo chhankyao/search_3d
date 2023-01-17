@@ -72,17 +72,6 @@
          <button type="button" onclick="close_3d('giraffe_12')">Close 3D</button>
       </div>
 
-      <div id='zebra_27' class="image" data-title="zebra">
-         <a href="https://www.maxpixel.net/static/photo/1x/Wild-Kenya-Animal-Nikon-Wild-Life-Africa-Zebra-4917802.jpg"><img src="images/zebra/zebra_27.png" alt=""></a>
-         <h4>Wild-Kenya-Animal-Nikon-Wild...</h4>
-         <button type="button" onclick="load_3d('zebra_27')">Load 3D</button>
-      </div>
-      <div id='zebra_27_3d' class="mesh" data-title="zebra">
-         <model-viewer autoplay ar shadow-intensity="1" src="images/zebra/zebra_27.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
-         <h4>Wild-Kenya-Animal-Nikon-Wild...</h4>
-         <button type="button" onclick="close_3d('zebra_27')">Close 3D</button>
-      </div>
-
       <div id='giraffe_15' class="image" data-title="giraffe">
          <a href="https://storage.needpix.com/rsynced_images/giraffe-on-a-savannah-1519259395MaC.jpg"><img src="images/giraffe/giraffe_15.png" alt=""></a>
          <h4>Giraffe-on-a-savannah...</h4>
@@ -94,8 +83,19 @@
          <button type="button" onclick="close_3d('giraffe_15')">Close 3D</button>
       </div>
 
+      <div id='zebra_27' class="image" data-title="zebra">
+         <a href="https://www.maxpixel.net/static/photo/1x/Wild-Kenya-Animal-Nikon-Wild-Life-Africa-Zebra-4917802.jpg"><img src="images/zebra/zebra_27.png" alt=""></a>
+         <h4>Wild-Kenya-Animal-Nikon-Wild...</h4>
+         <button type="button" onclick="load_3d('zebra_27')">Load 3D</button>
+      </div>
+      <div id='zebra_27_3d' class="mesh" data-title="zebra">
+         <model-viewer autoplay ar shadow-intensity="1" src="images/zebra/zebra_27.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+         <h4>Wild-Kenya-Animal-Nikon-Wild...</h4>
+         <button type="button" onclick="close_3d('zebra_27')">Close 3D</button>
+      </div>
+
       <div id='giraffe_16' class="image" data-title="giraffe">
-         <a href="https://www.maxpixel.net/static/photo/1x/Wildlife-Nature-Animal-Mammal-Safari-Giraffe-6611282.jpg"><img src="images/giraffe/giraffe_16.png" alt=""></a>
+         <img src="images/giraffe/giraffe_16.png" alt="">
          <h4>Wildlife-Nature-Animal-Mammal...</h4>
          <button type="button" onclick="load_3d('giraffe_16')">Load 3D</button>
       </div>
@@ -114,11 +114,13 @@
 <script>
 
 let searchBox = document.querySelector('#search-box');
+let meshes = document.querySelectorAll('.container .image-container .mesh');
 let images = document.querySelectorAll('.container .image-container .image');
 let buttons = document.querySelectorAll('.container .image-container .image button');
 
 searchBox.oninput = () =>{
    images.forEach(hide => hide.style.display = 'none');
+   meshes.forEach(hide => hide.style.display = 'none');
 };
 
 function search() {
