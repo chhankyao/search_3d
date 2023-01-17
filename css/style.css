@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
-button{
-  font-size: 25px;
-  border-radius: 5px;
-  padding: 5px 20px;
-  color: white;
-  background-color: #009DCB;
-  cursor: pointer;
-}
 
 *{
    font-family: 'Montserrat', sans-serif;
@@ -23,8 +15,17 @@ body{
   background-color: #fff;
 }
 
+button{
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: white;
+  background-color: #009DCB;
+  cursor: pointer;
+}
+
 .container{
-  padding:25px 10%;
+  padding: 25px 10%;
   text-align: center;
 }
 
@@ -35,9 +36,9 @@ body{
 
 .container #search-box{
   width: 600px;
-  border:1px solid #aaa;
+  border: 1px solid #aaa;
   border-radius: 20px;
-  padding:12px 15px;
+  padding: 12px 15px;
   font-size: 20px;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
@@ -46,24 +47,20 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:20px;
+  gap: 20px;
   padding-top: 30px;
 }
 
 .container .image-container .image{
-  padding:15px;
+  padding: 15px;
   background-color: #fff;
-  border:0px solid #000;
+  border: 0px solid #000;
   height: 250px;
   border-radius: 5px;
-  animation: fadeIn .2s linear;
 }
 
-@keyframes fadeIn {
-  0%{
-    transform: scale(.5) translateY(-10px);
-    opacity: 0;
-  }
+.container .image-container .mesh {
+  display: none
 }
 
 .container .image-container .image img{
@@ -106,10 +103,6 @@ body{
   cursor: pointer;
 }
 
-.container .image-container .mesh {
-  display: none
-}
-
 
 @media (max-width:768px){
   .container #search-box{
@@ -120,7 +113,7 @@ body{
 @media (max-width:450px){
 
   .container{
-    padding:25px 20px;
+    padding: 25px 20px;
   }
 
   .container .image-container .image{

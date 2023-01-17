@@ -132,7 +132,9 @@ function search() {
     }
   });
   buttons.forEach(filter =>{
-    filter.style.display = 'inline';
+    if(value != ''){
+      filter.style.display = 'inline';
+    }
   });
 }
 
