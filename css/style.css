@@ -24,6 +24,11 @@ button{
   cursor: pointer;
 }
 
+model-viewer{
+	height:200px;
+	width:100%;
+}
+
 .container{
   padding: 25px 10%;
   text-align: center;
@@ -102,7 +107,6 @@ button{
   background-color: #CCCCCC;
   cursor: pointer;
 }
-
 
 @media (max-width:768px){
   .container #search-box{
