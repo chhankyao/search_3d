@@ -6,7 +6,7 @@
 <script>
     function load_3d(img_id) {
         document.getElementById(img_id)
-                .style.display = "none";
+                .style.display = "block";
         document.getElementById(img_id + '_3d')
                 .style.display = "block";
     }
@@ -36,6 +36,7 @@
 
    <input type="text" placeholder="search animal images" id="search-box">
    <button type="button" onclick="search()">Search</button>
+   <p>Available classes: zebra, giraffe, elephant, tiger, kangaroo, penguin, horse, cow, sheep</p>
 
    <div class="image-container">
 
