@@ -29,6 +29,12 @@ model-viewer{
 	width: 300px;
 }
 
+p{
+  color: grey;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
 .container{
   padding: 25px 10%;
   text-align: center;
@@ -62,6 +68,7 @@ model-viewer{
   border: 0px solid #000;
   height: 250px;
   border-radius: 5px;
+  display: none;
 }
 
 .container .image-container .mesh {
@@ -95,7 +102,7 @@ model-viewer{
   color: black;
   background-color: #CCCCCC;
   cursor: pointer;
-  display: none
+  display: none;
 }
 
 .container .image-container .mesh button{
